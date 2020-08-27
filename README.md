@@ -25,7 +25,7 @@ Participants can take the reference from this website👉[Reference](https://www
 
 ## How to Contribute to this project?
 
-All contributors are Welcome before contributing to this Project, make sure you have gone through the              ,and follow the Clean Practice to raise the issues.
+All contributors are Welcome before contributing to this Project, make sure you have gone through the ![CONTRIBUTING.md](https://github.com/girlscript/EQEquation-Website/CONTRIBUTING.md),and follow the Clean Practice to raise the issues.
 
 **The website is to be build from scratch so, we are required to follow below approaches👇**
 
