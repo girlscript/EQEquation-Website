@@ -2,14 +2,12 @@
   
 # EQEquation-Website
 
+
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
 ![GitHub forks](https://img.shields.io/github/forks/girlscript/EQEquation-Website?label=Fork&style=social)
-
 ![GitHub Pull Request](https://img.shields.io/github/issues-raw/girlscript/EQEquation-Website)
-
 ![GitHub Issues](https://img.shields.io/github/issues-closed-raw/girlscript/EQEquation-Website)
-
 ![GitHub Issues](https://img.shields.io/bitbucket/pr-raw/girlscript/EQEquation-Website)
 
 </div>
@@ -48,17 +46,15 @@ All contributors are Welcome before contributing to this Project, make sure you 
 
 Ritesh Yadav[Project Lead]
 * Shoot me a message on Slack Channel of GSSOC'20 Extended
-* Mail me at :[Ritesh](daydreamingguy941@gmail.com)
+* Mail me at : [Ritesh](daydreamingguy941@gmail.com)
 
 Shama Devi[Project Lead]
-* Shoot a message on Slack Channel of GSSOC'20
-* Mail at :[Shama](shamadevi4041@gmail.com)
+* Shoot a message on Slack Channel of GSSOC'20 Extended
+* Mail at : [Shama](shamadevi4041@gmail.com)
 
 ## At the End:
 
-<div align="centre">
 ![Alt Text](https://media.giphy.com/media/efPA2YD9BFWS30GJ5v/giphy.gif)
-</div>
 
 
 
