@@ -12,7 +12,7 @@
 
 </div>
 
-## About EQEquation-Website
+## About EQEquation-Website👇
 
 >Emotional Intelligence (EQ) has given Deepa a weapon to reach new heights of success. Leaders need tools along with their high IQ, luck, and that’s what EQ Equation empowers them. Since she began her professional journey, she has never said NO to an opportunity that led me to take up a sales job while working as a scientist. She has lived/worked in four continents and understood the secret ingredient “your unique style”. Educational institutions engrave us with the belief to keep working hard all our life to be successful. No education gives us the soft skills and how to use one’s natural technique to be an empathetic impactful leader.
 
@@ -20,7 +20,7 @@
 
 ## References
 
-Participants can take the reference from this website [Reference](https://www.owenell.com/), We are going to create this website as mostly looking to this referenced website.
+Participants can take the reference from this website👉[Reference](https://www.owenell.com/), We are going to create this website as mostly looking to this referenced website.
 #### All Features which are implemented in this Referenced website will be implemented in this current project.
 
 
@@ -30,25 +30,25 @@ All contributors are Welcome before contributing to this Project, make sure you 
 
 **The website is to be build from scratch so, we are required to follow below approaches👇**
 
-* At the initial stages of the project, the issues where raised by project leads only ,as the initial website is build participants can raise issue like bug fixes and Features Enhancements.
+✔ At the initial stages of the project, the issues where raised by project leads only ,as the initial website is build participants can raise issue like bug fixes and Features Enhancements.
 
-* Participants have to contribute to a Particular issues,or fixes.
+✔ Participants have to contribute to a Particular issues,or fixes.
 
-* Participant who come first and ask for issue they will be assigned first like in every OSS projects.
+✔ Participant who come first and ask for issue they will be assigned first like in every OSS projects.
 
-* Participant working on a particular issue will have to give daliy updates to the Project Leads in slack channel.
+✔ Participant working on a particular issue will have to give daliy updates to the Project Leads in slack channel.
 
-* If Project Lead donot see any progress in the particular issue ,The issue will be assigned to another Participant.
+✔ If Project Lead donot see any progress in the particular issue ,The issue will be assigned to another Participant.
 
-### NOTE: At the beginning of the project their is very less issues as we are building from scratch,so wait for some time everyone will get the fair chance.
+### **NOTE** : At the beginning of the project their is very less issues as we are building from scratch,so wait for some time everyone will get the fair chance.
 
 ## **All Queries are Welcomed**
 
-Ritesh Yadav[Project Lead]
+👉Ritesh Yadav[Project Lead] 
 * Shoot me a message on Slack Channel of GSSOC'20 Extended
 * Mail me at : [Ritesh](daydreamingguy941@gmail.com)
 
-Shama Devi[Project Lead]
+👉Shama Devi[Project Lead]
 * Shoot a message on Slack Channel of GSSOC'20 Extended
 * Mail at : [Shama](shamadevi4041@gmail.com)
 
