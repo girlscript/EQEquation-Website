@@ -67,6 +67,8 @@ Note that EQEquation-Website's repository will be on the left and your repositor
 
 Click the green button “Create pull request”. Give a succinct and informative title, in the comment field give a short explanation of the changes and click the green button “Create pull request” again.
 
+**Note**: Create a sperate Branch for Raising PR's to maintain a clean workflow.
+
 #### Pulling others’ changes
 Before you make further changes to the repository, you should check that your version is up to date relative to EQEquation-Website version.
 
