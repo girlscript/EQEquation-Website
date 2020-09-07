@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 #header{
@@ -26,7 +27,7 @@
 }
 h1{
     font-size: 34px;
-    
+
 }
 .square{
     height: 12px;
@@ -161,7 +162,6 @@ nav ul a{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 .feature-col{
     flex-basis: 25%;
@@ -181,7 +181,7 @@ nav ul a{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    
+
 }
 .feature-btn .line{
     text-align: right;
@@ -222,6 +222,113 @@ nav ul a{
 #offer button{
     margin: 30px 0;
 }
+
+/*--testimonials--*/
+#testimonials {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.text-wrapper {
+  width: 70%;
+}
+
+.img-testimonials {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#testimonials blockquote::before {
+  content: open-quote;
+}
+
+#testimonials blockquote::after {
+  content: close-quote;
+}
+
+#testimonials blockquote {
+  font-family: "Verdana";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #808080;
+  margin: 50px 0px 50px 0px;
+  quotes: "“" "”" "‘" "’";
+}
+
+#testimonials figcaption {
+  position: relative;
+  margin-top: 75px;
+}
+
+#testimonials cite {
+  color: grey;
+}
+
+/*--testimonials Card--*/
+
+/* Three Columns */
+.testimonials-column {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+.testimonials-row {margin: 0 -5px;}
+
+.testimonials-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.testimonials-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.testimonials-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.img-testimonials-card {
+  width: 15vw;
+  height: 15vw;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  margin-top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quote {
+padding: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.img-testimonials-card {
+    	margin-top: -7.5vw;
+    }
+}
+
+/*-- Contact --*/
 
 .contact-row{
     display: flex;
@@ -285,7 +392,7 @@ hr{
 }
 .footer-links{
     display: flex;
-    
+
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -343,47 +450,47 @@ hr{
     .logo{
         margin-top: 27px;
         width: 70px;
-    
+
     }
     .header-text{
-       
+
         margin-top: 100px;
     }
     h1{
         font-size: 25px;
-        
+
     }
     #menuBtn{
         width: 40px;
         right: 50px;
-        
-        
-        
+
+
+
     }
     .common-btn{
         padding: 10px 16px;
-        
-    
+
+
     }
     .social-icons img{
-        
+
         width: 14px;
         margin: 15px auto;
-        
+
     }
     .about-left-col, .about-right-col{
         flex-basis: 100%;
-    
+
     }
     .about-text{
-        
+
         margin: 50px 50px 0;
         display: inline-block;
     }
     .about-text h2{
-        
+
         font-size: 18px;
-        
+
     }
     .feature-col{
         flex-basis: 100%;
@@ -391,13 +498,26 @@ hr{
     }
     .course-left-col{
         flex-basis: 100%;
-    
+
     }
     .course-right-col{
         flex-basis: 100%;
         margin-top: 70px;
-    
+
     }
+
+    .testimonials-column {
+      width: 100%;
+      display: block;
+      margin-bottom: 25%;
+
+    }
+    .img-testimonials-card {
+    	width: 25vw;
+      height: 25vw;
+      margin-top: -12.5vw;
+    }
+
     .contact-left-col,.contact-right-col{
         flex-basis: 100%;
     }
@@ -412,5 +532,5 @@ hr{
         flex-basis: 50%;
         margin-bottom: 30px;
     }
-    
+
 }
