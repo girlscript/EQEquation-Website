@@ -437,6 +437,12 @@ hr{
     margin: 0 auto 20px;
     cursor: pointer;
 }
+.footer-social, .fab{
+    color: #f67c92;
+}
+.footer-social, .fab:hover{
+    color: #fab3c4;
+}
 
 @media only screen and (max-width: 770px){
     #header{
