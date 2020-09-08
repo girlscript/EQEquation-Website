@@ -509,30 +509,4 @@ hr {
     margin-top: 70px;
   }
 
-  .testimonials-column {
-    width: 100%;
-    display: block;
-    margin-bottom: 25%;
-  }
-  .img-testimonials-card {
-    width: 25vw;
-    height: 25vw;
-    margin-top: -12.5vw;
-  }
-
-  .contact-left-col,
-  .contact-right-col {
-    flex-basis: 100%;
-  }
-  .contact-right-col {
-    margin-top: 50px;
-  }
-  .footer-left-col,
-  .footer-right-col {
-    flex-basis: 100%;
-  }
-  .link-title {
-    flex-basis: 50%;
-    margin-bottom: 30px;
-  }
 }
