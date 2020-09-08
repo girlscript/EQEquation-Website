@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+/* PreLoader */
+
+.preloader{
+    align-items: center;
+    background: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.3s linear;
+    width: 100%;
+    z-index: 10
+}
+
 #header{
     height: 100vh;
     background-image: url(images/background.png);
