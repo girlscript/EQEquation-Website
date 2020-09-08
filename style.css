@@ -106,14 +106,7 @@ nav ul li a:hover {
     background-image: linear-gradient(-90deg,#f67c92,#f0556f);
 
 }
-#sideNav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    color: #fff;
-  }
+
 
   @media screen and (max-height: 450px) {
     #sideNav {padding-top: 15px;}
@@ -133,8 +126,9 @@ nav ul a {
   top: 0px;
   z-index: 2;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.5;
   display:flex;
+  margin-top: 40px;
   
 }
 
