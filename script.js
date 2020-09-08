@@ -9,6 +9,7 @@ const fadeEffect = setInterval(() => {
     if(preloader.style.opacity > 0){
         preloader.style.opacity -= 0.1;
     } else{
+        preloader.parentNode.removeChild(preloader)
         clearInterval(fadeEffect);
     }
 }, 300)
