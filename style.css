@@ -80,13 +80,7 @@ p {
   top: 0;
   background: #f67c92;
   z-index: 2;
-  transition: 0.3s;
-  transform: translateX(100%);
-  transition: transform .4s cubic-bezier(.4, 0, .2, 1) .2s;
-}
-.nav-div:hover #sideNav {
-    transform: translateX(0);
-    transition-delay: 0.3s;
+  transition: 0.5s;
 }
 nav ul li {
   list-style: none;
