@@ -14,7 +14,7 @@
     <body>
 
         <section id="header">
-            <header class="top-navbar">
+            <header id="top-navbar">
               <img src="images/logo.png" class="logo">
             </header>
             <div class="container">
@@ -330,14 +330,23 @@
               }
           }
 
-
           var scroll = new SmoothScroll('a[href*="#"]',{
             speed: 500,
 	        speedAsDuration: true
           });
 
-    </script>
+          var prevScrollpos = window.pageYOffset;
+          window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+              document.getElementById("top-navbar").style.top = "0";
+            } else {
+              document.getElementById("top-navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+          }
 
+    </script>
 
     </body>
 </html>
