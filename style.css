@@ -11,11 +11,13 @@
   background-position: center;
   background-size: cover;
 }
+
 .container {
   margin-right: 100px;
   margin-left: 100px;
 }
-.top-navbar{
+
+#top-navbar{
     display: block;
     content: "";
     position: fixed;
@@ -24,7 +26,9 @@
     top: 0;
     z-index: 4 !important;
     background-color: #fff;
+    transition: top 0.3s;
 }
+
 .logo {
   float: left;;
   margin-top: 0px;
@@ -32,6 +36,7 @@
   width: 100px;
   padding-bottom: 10px;
 }
+
 .header-text {
   max-width: 350px;
   margin-top: 140px;
