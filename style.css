@@ -426,7 +426,6 @@ p {
   border-radius: 20px;
   text-align: center;
   position: relative;
-   margin-top: 75px;
 }
 
 .testimonials-card:hover {
@@ -450,22 +449,10 @@ p {
   padding: 20px;
 }
 
-body .carousel-indicators li{
-  background-color:#ee476e;
- }
-
-body .carousel-control-prev-icon,
-body .carousel-control-next-icon{
-  background-color:#f57593;
- }
-
 @media screen and (max-width: 1000px) {
   .img-testimonials-card {
     margin-top: -7.5vw;
   }
-  .testimonials-card {
-    margin-top: 75px;  
- }
 }
 
 /*-- Section Contact --*/
@@ -651,10 +638,6 @@ hr {
     height: 25vw;
     margin-top: -12.5vw;
   }
-  .testimonials-card {
-    margin-top: 75px;
-    padding-top: 15px;
- }
 
   /* --Mobile view Navbar -- */
   .logo-mobile {
