@@ -515,7 +515,6 @@ hr {
 }
 .footer-links {
   display: flex;
-
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -572,6 +571,10 @@ hr {
   .logo{
     margin-left: 45%;
   }
+
+.footer-left-col{
+  flex-basis: 35%;
+}
 }
 
 @media only screen and (max-width: 770px) {
@@ -624,6 +627,9 @@ hr {
   .course-right-col {
     flex-basis: 100%;
     margin-top: 70px;
+  }
+  .footer-left-col{
+    flex-basis: 35%;
   }
 
   /* --Mobile view testimonials -- */
