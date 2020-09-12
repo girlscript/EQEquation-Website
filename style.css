@@ -383,6 +383,7 @@ p {
   line-height: 30px;
   color: #808080;
   quotes: "“" "”" "‘" "’";
+  border-left: none;
 }
 
 #testimonials figcaption {
