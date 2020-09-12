@@ -1,23 +1,23 @@
-// // PreLoader
-// const preloader = document.querySelector('.preloader');
-// var intervalId;
-//
-// // calling timer on DOM load
-// window.addEventListener ('load', function () {
-//     intervalId = setInterval (fadeEffect, 300);
-// }, false);
-//
-// function fadeEffect () {
-//   if(!preloader.style.opacity) {
-//       preloader.style.opacity = 1;
-//   }
-//   if(preloader.style.opacity > 0){
-//       preloader.style.opacity -= 0.1;
-//   } else{
-//       preloader.parentNode.removeChild(preloader)
-//       clearInterval(intervalId);
-//   }
-// }
+// PreLoader
+const preloader = document.querySelector('.preloader');
+var intervalId;
+
+// calling timer on DOM load
+window.addEventListener ('load', function () {
+    intervalId = setInterval (fadeEffect, 300);
+}, false);
+
+function fadeEffect () {
+  if(!preloader.style.opacity) {
+      preloader.style.opacity = 1;
+  }
+  if(preloader.style.opacity > 0){
+      preloader.style.opacity -= 0.1;
+  } else{
+      preloader.parentNode.removeChild(preloader)
+      clearInterval(intervalId);
+  }
+}
 
 var menuBtn = document.getElementById("menuBtn");
 var sideNav = document.getElementById("sideNav");
