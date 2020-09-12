@@ -4,18 +4,18 @@ var intervalId;
 
 // calling timer on DOM load
 window.addEventListener ('load', function () {
-    intervalId = setInterval (fadeEffect, 300);
+  intervalId = setInterval (fadeEffect, 300);
 }, false);
 
 function fadeEffect () {
   if(!preloader.style.opacity) {
-      preloader.style.opacity = 1;
+    preloader.style.opacity = 1;
   }
   if(preloader.style.opacity > 0){
-      preloader.style.opacity -= 0.1;
+    preloader.style.opacity -= 0.1;
   } else{
-      preloader.parentNode.removeChild(preloader)
-      clearInterval(intervalId);
+    preloader.parentNode.removeChild(preloader)
+    clearInterval(intervalId);
   }
 }
 
@@ -46,3 +46,20 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+// Initialize Swiper
+var swiper = new Swiper('.swiper-container', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
