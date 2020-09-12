@@ -426,6 +426,7 @@ p {
   border-radius: 20px;
   text-align: center;
   position: relative;
+  height: 100%; 
 }
 
 .testimonials-card:hover {
@@ -447,6 +448,7 @@ p {
 
 .quote {
   padding: 20px;
+  padding-top: 80px;
 }
 
 @media screen and (max-width: 1000px) {
