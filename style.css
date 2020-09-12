@@ -6,21 +6,6 @@
   box-sizing: border-box;
 }
 
-
-.swiper-container {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 33.33%;
-  min-width: 200px;
-  height: 300px;
-
-}
 /* --Preloader-- */
 .preloader {
   align-items: center;
@@ -660,6 +645,14 @@ hr {
     width: 25vw;
     height: 25vw;
     margin-top: -12.5vw;
+  }
+
+  #testimonials .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 33.33%;
+    min-width: 300px;
+    height: 500px;
   }
 
   /* --Mobile view Navbar -- */
