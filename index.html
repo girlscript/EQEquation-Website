@@ -20,11 +20,14 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous" />
 </head>
-<body>
+<body id="body" class="dark-mode">
 
   <header>
     <div class="preloader">
       <img src="./images/preloader.gif" alt="spinner">
+    </div>
+    
+    <div><button class="button" onclick="toggleDarkLight()">Switch theme</button>
     </div>
 
     <div id="top-navbar">
