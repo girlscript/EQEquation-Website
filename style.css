@@ -9,7 +9,7 @@
 ::-webkit-scrollbar-track
 {
   border-radius: 10px;
-    background-color: #CCCCCC; 		
+    background-color: #CCCCCC;
 }
 
   ::-webkit-scrollbargit
@@ -23,6 +23,11 @@
   border-radius: 10px;
   background-color: #e426bb;
   background-image: -webkit-linear-gradient(90deg,transparent,rgba(28, 26, 139, 0.4) 50%,transparent,transparent)
+}
+
+/* width of scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
 }
 
 /* --Preloader-- */
