@@ -6,6 +6,30 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+    background-color: #CCCCCC;
+}
+
+  ::-webkit-scrollbargit
+  {
+  width: 12px;
+  background-color: #F5F5F5;
+  }
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #e426bb;
+  background-image: -webkit-linear-gradient(90deg,transparent,rgba(28, 26, 139, 0.4) 50%,transparent,transparent)
+}
+
+/* width of scrollbar */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
 /* --Preloader-- */
 .preloader {
   align-items: center;
