@@ -1,390 +1,279 @@
 {% extends "main_template.html" %}
 {% block title %}EQEquation{% endblock %}
 {% block content %}
-  <main id="main">
+  <main>
+    <section id="header">
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="4" class="active"></li>
+          </ol>
 
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
 
+            <div class="item active">
+              <img src="{{url_for('static', filename='images/header1.jpg')}}" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Hello everyone !!!</h3>
+                <p style="color:#fff;">The purpose is to<br> teach, bring learning to people</p>
+              </div>
+            </div>
 
+            <div class="item">
+              <img src="{{url_for('static', filename='images/header2.jpg')}}" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>We are HERE</h3>
+                <p style="color:#fff;">For you all we have this opportunity</p>
+              </div>
+            </div>
 
+            <div class="item">
+              <img src="{{url_for('static', filename='images/header4.jpg')}}" alt="New York" style="width:100%;">
 
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
+            </div>
 
+            <div class="item">
+              <img src="{{url_for('static', filename='images/header3.png')}}" alt="New York" style="width:100%;">
 
+            </div>
 
-    <section class="main-hero-section" id="header">
-      <div class="main-hero-container">
-        <div class="main-hero-img">
-          <a href="#" class="c-logo js-tilt" data-tilt-glare="true" data-tilt-maxglare=".6" data-tilt-speed="400"
-            data-tilt-scale="1.1" data-tilt-maxtilt="50" data-tilt-perspective="500">
-            <span class="backdrop"></span>
-            <span><img src="{{url_for('static', filename='images/nobghero2.png')}}"></span>
+            <div class="item">
+              <img src="{{url_for('static', filename='images/header4.jpg')}}" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Importance of Health</h3>
+                <p style="color:#fff;">Mental Health is important to all</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="main-hero-content">
-          <div class="text-container">
-            <h1>Align IQ with EQ to escalate YOUR potential</h1>
-            <h2>Strategically enhancing leadership, communities, individuals and adolescents</h2>
-            <br>
-            <button>Book Now</button>
-          </div>
-        </div>
       </div>
     </section>
-
-
-
-    <!--Hero Section-->
-    <section class="hero-section">
-      <div class="hero-container">
-        <h1>
-          <strong>
-            In the past jobs were about muscles,now they're about brains,but in futue,they'll be about the heart.
-            - Minouche Shafik(VP of World Bank)
-            <br>
-            <br>
-            The emotional brains respond to an event more quicklythan the thinking brain. - Daniel Goleman(Author,
-            Professor at Harvard)
-            <br>
-            <br>
-            One of the most important of all personal leadership skills is Self-Awareness.- Robin Sharma (Author)
-          </strong>
-        </h1>
-        <br>
-        <br>
-        <div class="container box">
-          <div class="box-row row">
-
-            <div class="box-cell box1 col-md-6">
-              <h1 class="h-blue"><strong>What is Emotional Intelligence?</strong> </h1>
-              The ability is to understand and control your own feelings,and to understand the feelings of others and
-              react to them in suitable way :
-              Emotional Intelligence is as important as academic intelligence .(Definition from the Cambridge Business
-              English Dictionary)
-            </div>
-            <div class="box-cell box2 col-md-6">
-              <h1 class="h-blue"><strong>What is Success?</strong></h1>
-              Our definition of success is " when I have done better than yesterday".It's a measurement of self from
-              self ,the only constant is you and the effort is to do better from yesterday in whatever you choose to
-              do.What is not is to compare yourself with someone else.Just the way you are unique ,your success is
-              unique as well.
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
-        <button>Read More</button>
-      </div>
-
-    </section>
-
-
-
-
-
-
-
-
-
 
     <!--about-->
 
     <section id="about">
-      <div class="about-left-col" data-aos="fade-up" data-aos-duration="1000">
+      <div class="about-left-col">
         <img src="{{url_for('static', filename='images/about.png')}}">
       </div>
       <div class="about-right-col">
         <div class="about-text">
-          <h1 data-aos="fade-up" data-aos-duration="900">About Us</h1>
+          <h1>About Us</h1>
           <span class="square"></span>
-          <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-            quam dolor repudiandae consequatur totam iure corrupti
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea quam dolor repudiandae consequatur totam iure corrupti
             eos cupiditate, veritatis non aperiam dolorem tenetur facere
-            esse doloremque maiores est? Molestias, eius!n jjjkkohuigyythvfgcfgcfbvgh
-          </p>
-          <br><br>
-          <div class="line">
-            <span class="line-1"></span><br>
-            <span class="line-2"></span><br>
-            <span class="line-3"></span>
-          </div>
-
-          <h2 data-aos="fade-up" data-aos-duration="1100">"hhhhhhhhhbkjnlknkjn kjmnmkjmn jknmnk jn kjm"</h2>
-          <h3 data-aos="fade-up" data-aos-duration="1150">---Ritesh</h3>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-    <!---features-->
-
-    <section id="features">
-      <div class="feature-row">
-        <div class="feature-col" data-aos="fade-up" data-aos-duration="800">
-          <img src="{{url_for('static', filename='images/pic-1.png')}}">
-          <h4>Hello everyone</h4>
-          <p>Switch between your computerbhb</p>
-        </div>
-        <div class="feature-col" data-aos="fade-up" data-aos-duration="800">
-          <img src="{{url_for('static', filename='images/pic-2.png')}}">
-          <h4>Hello everyone</h4>
-          <p>Switch between your computerbhb</p>
-        </div>
-        <div class="feature-col" data-aos="fade-up" data-aos-duration="800">
-          <img src="{{url_for('static', filename='images/pic-3.png')}}">
-          <h4>Hello everyone</h4>
-          <p>Switch between your computerbhb</p>
-        </div>
-      </div>
-      <div class="feature-btn">
-        <div class="line">
-          <span class="line-1"></span><br>
-          <span class="line-2"></span><br>
-          <span class="line-3"></span>
-        </div>
-        <button class="common-btn" data-aos="fade-up" data-aos-duration="1000">Start Free Trial</button>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-    <!--courses-->
-
-    <section id="courses">
-      <div class="container course-row">
-        <div class="course-left-col">
-          <div class="course-text">
-            <h1 data-aos="fade-up" data-aos-duration="900">EQEquation<br>Courses</h1>
-            <span class="square"></span>
-            <p data-aos="fade-up" data-aos-duration="1000">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit harum quos quas accusantium
-              laudantium exercitationem suscipit excepturi, reprehenderit accusamus nemo nam, vitae, ut eos aliquam cum
-              porro fugiat amet doloribus?
-            </p>
-            <button class="common-btn" data-aos="fade-up" data-aos-duration="1000">View all courses</button>
+            esse doloremque maiores est? Molestias, eius!n jjjkkohuigyythvfgcfgcfbvgh</p><br><br>
             <div class="line">
               <span class="line-1"></span><br>
               <span class="line-2"></span><br>
               <span class="line-3"></span>
             </div>
+
+            <h2>"hhhhhhhhhbkjnlknkjn kjmnmkjmn jknmnk jn kjm"</h2>
+            <h3>---Ritesh</h3>
           </div>
         </div>
-        <div class="course-right-col" data-aos="fade-up" data-aos-duration="1000">
-          <img src="{{url_for('static', filename='images/course.png')}}">
+      </section>
+
+      <!---features-->
+
+      <section id="features">
+        <div class="feature-row">
+          <div class="feature-col">
+            <img src="{{url_for('static', filename='images/pic-1.png')}}">
+            <h4>Hello everyone</h4>
+            <p>Switch between your computerbhb</p>
+          </div>
+          <div class="feature-col">
+            <img src="{{url_for('static', filename='images/pic-2.png')}}">
+            <h4>Hello everyone</h4>
+            <p>Switch between your computerbhb</p>
+          </div>
+          <div class="feature-col">
+            <img src="{{url_for('static', filename='images/pic-3.png')}}">
+            <h4>Hello everyone</h4>
+            <p>Switch between your computerbhb</p>
+          </div>
         </div>
-      </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-    <!--offer-->
-
-    <section id="offer">
-      <div data-aos="fade-up" data-aos-duration="1000" class="about-left-col">
-        <img src="{{url_for('static', filename='images/offer.png')}}">
-      </div>
-      <div class="about-right-col">
-        <div class="about-text">
-          <h1 data-aos="fade-up" data-aos-duration="900">heeloo i am ritesh<br>fffffff</h1>
-          <span class="square"></span>
-          <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-            quam dolor repudiandae consequatur totam iure corrupti
-            eos cupiditate, veritatis non aperiam dolorem tenetur facere
-            esse doloremque maiores est? Molestias, eius!n jjjkkohuigyythvfgcfgcfbvgh
-          </p>
-          <button class="common-btn" data-aos="fade-up" data-aos-duration="1000">Start free trial</button>
+        <div class="feature-btn">
           <div class="line">
             <span class="line-1"></span><br>
             <span class="line-2"></span><br>
             <span class="line-3"></span>
           </div>
+          <button class="common-btn">Start Free Trial</button>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!--courses-->
 
+      <section id="courses">
 
-
-
-
-
-
-
-
-    <!--TESTIMONIALS-->
-    <section id="testimonials">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="testimonials-card">
-              <img class="img-testimonials-card"
-                src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png"
-                alt="Image placeholder">
-              <figure class="quote">
-                <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
-                <br>
-                <blockquote>If debugging is the process of removing software bugs,
-                  then programming must be the process of putting them in.
-                </blockquote>
-              </figure>
+        <div class="container course-row">
+          <div class="course-left-col">
+            <div class="course-text">
+              <h1>EQEquation<br>Courses</h1>
+              <span class="square"></span>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit harum quos quas accusantium
+                laudantium exercitationem suscipit excepturi, reprehenderit accusamus nemo nam, vitae, ut eos aliquam cum porro fugiat amet doloribus?
+              </p>
+              <button class="common-btn">View all courses</button>
+              <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="testimonials-card">
-              <img class="img-testimonials-card"
-                src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png"
-                alt="Image placeholder">
-              <figure class="quote">
-                <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
-                <br>
-                <blockquote>If debugging is the process of removing software bugs,
-                  then programming must be the process of putting them in.
-                </blockquote>
-              </figure>
-            </div>
+          <div class="course-right-col">
+            <img src="{{url_for('static', filename='images/course.png')}}">
           </div>
-          <div class="swiper-slide">
-            <div class="testimonials-card">
-              <img class="img-testimonials-card"
-                src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png"
-                alt="Image placeholder">
-              <figure class="quote">
-                <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
-                <br>
-                <blockquote>If debugging is the process of removing software bugs,
-                  then programming must be the process of putting them in.
-                </blockquote>
-              </figure>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonials-card">
-              <img class="img-testimonials-card"
-                src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png"
-                alt="Image placeholder">
-              <figure class="quote">
-                <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
-                <br>
-                <blockquote>If debugging is the process of removing software bugs,
-                  then programming must be the process of putting them in.
-                </blockquote>
-              </figure>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonials-card">
-              <img class="img-testimonials-card"
-                src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png"
-                alt="Image placeholder">
-              <figure class="quote">
-                <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
-                <br>
-                <blockquote>If debugging is the process of removing software bugs,
-                  then programming must be the process of putting them in.
-                </blockquote>
-              </figure>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonials-card">
-              <img class="img-testimonials-card"
-                src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png"
-                alt="Image placeholder">
-              <figure class="quote">
-                <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
-                <br>
-                <blockquote>If debugging is the process of removing software bugs,
-                  then programming must be the process of putting them in.
-                </blockquote>
-              </figure>
-            </div>
-          </div>
+
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
 
 
 
+      </section>
 
+      <!--offer-->
 
-
-
-
-
-
-
-
-
-
-    <section id="contact">
-      <div class="container contact-row">
-        <div class="contact-left-col">
-          <h1 data-aos="fade-up" data-aos-duration="900">Sign Up to join our<br>learning community</h1>
-          <form data-aos="fade-up" data-aos-duration="1000">
-
-            <input type="text" placeholder="Enter Name">
-            <input type="email" placeholder="Enter Email">
-            <input type="password" placeholder="Enter Password">
-
-            <div class="btn-box">
-              <button class="common-btn" data-aos="fade-up" data-aos-duration="1100">Sign Up</button>
-              <button class="common-btn" data-aos="fade-up" data-aos-duration="1100">Log In</button>
+      <section id="offer">
+        <div class="about-left-col">
+          <img src="{{url_for('static', filename='images/offer.png')}}">
+        </div>
+        <div class="about-right-col">
+          <div class="about-text">
+            <h1>heeloo i am ritesh<br>fffffff</h1>
+            <span class="square"></span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea quam dolor repudiandae consequatur totam iure corrupti
+              eos cupiditate, veritatis non aperiam dolorem tenetur facere
+              esse doloremque maiores est? Molestias, eius!n jjjkkohuigyythvfgcfgcfbvgh</p>
+              <button class="common-btn">Start free trial</button>
+              <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+              </div>
             </div>
-          </form>
-
-          <div class="line">
-            <span class="line-1"></span><br>
-            <span class="line-2"></span><br>
-            <span class="line-3"></span>
           </div>
-        </div>
-        <div class="contact-right-col" data-aos="fade-up" data-aos-duration="1000">
-          <img src="{{url_for('static', filename='images/contact.png')}}">
-        </div>
-      </div>
-    </section>
+        </section>
 
+        <!--TESTIMONIALS-->
+        <section id="testimonials">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><div class="testimonials-card">
+                <img class="img-testimonials-card" src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png" alt="Image placeholder">
+                <figure class="quote">
+                  <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
+                  <br>
+                  <blockquote>If debugging is the process of removing software bugs,
+                    then programming must be the process of putting them in.
+                  </blockquote>
+                </figure>
+              </div></div>
+              <div class="swiper-slide"><div class="testimonials-card">
+                <img class="img-testimonials-card" src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png" alt="Image placeholder">
+                <figure class="quote">
+                  <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
+                  <br>
+                  <blockquote>If debugging is the process of removing software bugs,
+                    then programming must be the process of putting them in.
+                  </blockquote>
+                </figure>
+              </div></div>
+              <div class="swiper-slide"><div class="testimonials-card">
+                <img class="img-testimonials-card" src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png" alt="Image placeholder">
+                <figure class="quote">
+                  <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
+                  <br>
+                  <blockquote>If debugging is the process of removing software bugs,
+                    then programming must be the process of putting them in.
+                  </blockquote>
+                </figure>
+              </div></div>
+              <div class="swiper-slide"><div class="testimonials-card">
+                <img class="img-testimonials-card" src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png" alt="Image placeholder">
+                <figure class="quote">
+                  <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
+                  <br>
+                  <blockquote>If debugging is the process of removing software bugs,
+                    then programming must be the process of putting them in.
+                  </blockquote>
+                </figure>
+              </div></div>
+              <div class="swiper-slide"><div class="testimonials-card">
+                <img class="img-testimonials-card" src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png" alt="Image placeholder">
+                <figure class="quote">
+                  <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
+                  <br>
+                  <blockquote>If debugging is the process of removing software bugs,
+                    then programming must be the process of putting them in.
+                  </blockquote>
+                </figure>
+              </div></div>
+              <div class="swiper-slide"><div class="testimonials-card">
+                <img class="img-testimonials-card" src="https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png" alt="Image placeholder">
+                <figure class="quote">
+                  <figcaption><strong>Edsger Dijkstra</strong><br><cite>Random</cite></figcaption>
+                  <br>
+                  <blockquote>If debugging is the process of removing software bugs,
+                    then programming must be the process of putting them in.
+                  </blockquote>
+                </figure>
+              </div></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
 
+        <section id="contact">
+          <div class="container contact-row">
+            <div class="contact-left-col">
+              <h1>Sign Up to join our<br>learning community</h1>
+              <form>
 
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <input type="password" placeholder="Enter Password">
 
+                <div class="btn-box">
+                  <button class="common-btn">Sign Up</button>
+                  <button class="common-btn">Log In</button>
+                </div>
+              </form>
 
+              <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+              </div>
+            </div>
+            <div class="contact-right-col">
+              <img src="{{url_for('static', filename='images/contact.png')}}">
+            </div>
+          </div>
 
+        </section>
 
-
-
-    
-
-  </main>
-
+      </main>
       {% endblock %}
       
