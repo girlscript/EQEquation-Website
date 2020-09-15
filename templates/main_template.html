@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %}</title>
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <!-- styles -->
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <!-- SmoothScroll -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js" integrity="sha512-wDH73bv6rW6O6ev5DGYexNboWMzBoY+1TEAx5Q/sdbqN2MB2cNTG9Ge/qv3c1QNvuiAuETsKJnnHH2UDJGmmAQ==" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous" />
+</head>
+<body id="body" class="dark-mode">
+
+  <header>
+    <div class="preloader">
+      <img src="{{url_for('static', filename='images/preloader.gif')}}" alt="spinner">
+    </div>
+    
+    <div><button class="button" onclick="toggleDarkLight()">Switch theme</button>
+    </div>
+
+    <div id="top-navbar">
+      <div class="inline-links">
+        <ul>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><img src="{{url_for('static', filename='images/logo.png')}}" class="logo"></li>
+          <li><a href="#courses">COURSES</a></li>
+          <li><a href="#offer">OFFER</a></li>
+        </ul>
+      </div>
+      <img src="{{url_for('static', filename='images/menu.png')}}" class="logo-mobile">
+    </div>
+
+    <div class="nav-div">
+      <nav id="sideNav">
+        <ul>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#courses">COURSES</a></li>
+          <li><a href="#offer">OFFER</a></li>
+          <li><a href="#testimonials">TESTIMONIALS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <img src="{{url_for('static', filename='images/menu.png')}}" id="menuBtn">
+    </div>
+  </header>
+  {% block content %}{% endblock %}
+
+  
+      <section id="footer">
+        <div class="desktop-view-footer">
+          <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+              <div class="footer-links">
+                <div class="link-title">
+                  <h4>Product</h4>
+                  <small>our plan</small><br>
+                  <small>Free trial</small>
+                </div>
+                <div class="link-title">
+                  <h4>About Us</h4>
+                  <small>Request us</small><br>
+                  <small>contact</small>
+                </div>
+                <div class="link-title">
+                  <h4>support</h4>
+                  <small>features</small><br>
+                  <small>faqs</small>
+                </div>
+                <div class="link-title">
+                  <h4>support</h4>
+                  <small>find an profit</small><br>
+                  <small>solution</small>
+                </div>
+                <div class="link-title">
+                  <h4>Follow Us</h4>
+                  <div class="footer-social">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="footer-info">
+                <div class="copyright-text">
+                  <small>support@xypo.com</small><br>
+                  <small>copyright 2020 ritesh</small>
+                </div>
+                <div class="footer-logo">
+                  <img src="{{url_for('static', filename='images/logo.png')}}">
+                  <button class="common-btn">English</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-view-footer">
+          <h3 style="color:#86868b"> X ypo </h3>
+          <div class="footer-line-break"></div>
+          <div class="dropdown full-width">
+            <button class="btn dropdown-toggle relbtn" type="button" data-toggle="dropdown">
+              <div class="test">
+                <span>Product</span>
+                <span class="caret"></span>
+              </div>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Our Plan</a></li>
+              <li><a href="#">Free Trial</a></li>
+            </ul>
+          </div>
+          <div class="footer-line-break"></div>
+          <div class="dropdown full-width">
+            <button class="btn dropdown-toggle relbtn" type="button" data-toggle="dropdown">
+              <div class="test">
+                <span>About Us</span>
+                <span class="caret"></span>
+              </div>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Request Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-line-break"></div>
+          <div class="dropdown full-width">
+            <button class="btn dropdown-toggle relbtn" type="button" data-toggle="dropdown">
+              <div class="test">
+                <span>Support</span>
+                <span class="caret"></span>
+              </div>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="footer-line-break"></div>
+          <div class="dropdown full-width">
+            <button class="btn dropdown-toggle relbtn" type="button" data-toggle="dropdown">
+              <div class="test">
+                <span>Support</span>
+                <span class="caret"></span>
+              </div>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Find a Profit</a></li>
+              <li><a href="#">Solution</a></li>
+            </ul>
+          </div>
+          <div class="footer-line-break"></div>
+          <div class="footer-social">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="footer-line-break"></div>
+          <div class="footer-info">
+            <div class="copyright-text">
+              <small>support@xypo.com</small><br>
+              <small>copyright 2020 ritesh</small>
+            </div>
+            <div class="footer-logo">
+              <img src="{{url_for('static', filename='images/logo.png')}}">
+              <button class="common-btn">English</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <div class="social-icons">
+        <img src="{{url_for('static', filename='images/facebook.png')}}">
+        <img src="{{url_for('static', filename='images/instagram.png')}}">
+        <img src="{{url_for('static', filename='images/twitter.png')}}">
+        <img src="{{url_for('static', filename='images/linkedin.png')}}">
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
+      <!-- External Script -->
+      <script src="{{url_for('static', filename='script.js')}}"></script>
+
+    </body>
+    </html>
