@@ -51,7 +51,7 @@
   content: "";
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 65px;
   overflow: hidden;
   top: 0;
   z-index: 4 !important;
@@ -69,6 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #ffa1b8;
 }
 .inline-links ul {
   display: flex;
@@ -82,7 +83,7 @@
   align-items: center;
   justify-content: center;
   width: 100px;
-  height: 80px;
+  height: 65px;
   text-decoration: none;
   margin-left: 20px;
   margin-right: 20px;
@@ -98,24 +99,37 @@
   width: 100%;
   height:100%;
   text-decoration: none;
-  color: grey;
+  color: #fff;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
 }
 .inline-links ul li a:hover {
-  background-color: #fc88bf;
-  color: white;
+  /* background-color: #fc88bf; */
+  /* color: white; */
+  color: #000;
+  /* border-bottom: 2px solid #0e0c0c; */
+  /* text-decoration:none; */
+  /* transition: 0.7s all; */
+  background-image: linear-gradient(-90deg,#f67c92,#f0556f);
 }
 
 /* -- Side Navbar -- */
+#hamburger{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  margin: 2px;
+}
+
 #sideNav {
   width: 250px;
   height: 100vh;
   position: fixed;
   right: -250px;
   top: 0;
-  background: #f67c92;
+  background: #ffa1b8;
   z-index: 5;
   transition: 0.3s;
   transform: translateX(100%);
@@ -141,7 +155,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #000;
-  border-bottom: 2px solid #0e0c0c;
+  /* border-bottom: 2px solid #0e0c0c; */
   text-decoration:none;
   transition: 0.7s all;
   background-image: linear-gradient(-90deg,#f67c92,#f0556f);
@@ -170,13 +184,17 @@ nav ul a {
   top: 13px;
   z-index: 6 !important;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 1;
   display:flex;
+  padding: 5px;
+  background-color: #ffa1b8;
 }
+
+
 
 /* --Section header -- */
 #header {
-  padding-top: 85px;
+  padding-top: 45px;
   height: 100vh;
   /*background-image: url(images/background.png);*/
   background-position: center;
@@ -188,6 +206,10 @@ nav ul a {
 }
 
 /* Carousel base class */
+#header div.container-fluid{
+  padding: 0;
+}
+
 .carousel {
   height: 500px;
   margin-bottom: 60px;
@@ -271,7 +293,7 @@ p {
 
 #about,
 #offer {
-  padding: 100px 0;
+  padding: 150px 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -757,7 +779,7 @@ hr {
 }
 body.dark-mode {
   background-color: black;
-  color : red;
+  color : #f67c92;
 }
 
 body.light-mode {
@@ -767,15 +789,92 @@ body.light-mode {
 
   .button {
     font-size: 16px;
-    background-color: whitesmoke;
+    background-color: transparent;
+    text-align: center;
+    width: 10px;
+    position: fixed;
+    top: 19%;
+    right:1rem;
+    transform: translateX(50%);
+    z-index: 1;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    font-style: oblique;
+  }
+
+  .iconleft {
+    font-size: 16px;
+    background-color: transparent;
+    text-align: center;
+    width: 10px;
+    position: fixed;
+    top: 20%;
+    right:14vh;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-left: 50px;
+    /* margin-right: 20px; */
+    font-style: oblique;
+  }
+
+  /* toggle */
+  input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 25px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    font-size: 16px;
+    /* background-color: whitesmoke; */
     text-align: center;
     width: 55px;
-  position: fixed;
-  top: 20%;
-  right:0;
-  transform: translateY(-50%);
-  z-index: 1;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-style: oblique;
+    position: fixed;
+    top: 20%;
+    right:0;
+    transform: translateY(-50%);
+    z-index: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-style: oblique;
   }
+  
+  label:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 1s;
+  }
+  
+  input:checked + label {
+    background: #f67c92;
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+  
+  label:active:after {
+    width: 130px;
+  }
+  
+  /* // centering */
+  /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
