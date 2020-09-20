@@ -27,15 +27,16 @@
       <img src="./images/preloader.gif" alt="spinner">
     </div>
     
-    <div><button class="button" onclick="toggleDarkLight()">Switch theme</button>
-    </div>
+    <!-- <div><button class="button" onclick="toggleDarkLight()">Switch theme</button>
+    </div> -->
+    <div><i class="fas fa-sun button"></i><input type="checkbox" id="switch" onclick="toggleDarkLight()"/><label for="switch">Toggle</label><i class="fas fa-moon iconleft"></i></div>
 
     <div id="top-navbar">
       <div class="inline-links">
         <ul>
           <li><a href="#header">HOME</a></li>
           <li><a href="#about">ABOUT US</a></li>
-          <li><img src="images/logo.png" class="logo"></li>
+          <li><img src="images/logo-removebg-preview.png" class="logo"></li>
           <li><a href="#courses">COURSES</a></li>
           <li><a href="#offer">OFFER</a></li>
         </ul>
@@ -55,13 +56,14 @@
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
-      <img src="images/menu.png" id="menuBtn">
+      
+      <img src="images/ham-removebg-preview.png" id="menuBtn">
     </div>
   </header>
 
   <main>
     <section id="header">
-      <div class="container">
+      <div class="container-fluid">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -377,7 +379,7 @@
                   <small>copyright 2020 ritesh</small>
                 </div>
                 <div class="footer-logo">
-                  <img src="images/logo.png">
+                  <div style="background-color: #ffa1b8;"><img src="images/logo-removebg-preview.png"></div>
                   <button class="common-btn">English</button>
                 </div>
               </div>
@@ -453,7 +455,7 @@
               <small>copyright 2020 ritesh</small>
             </div>
             <div class="footer-logo">
-              <img src="images/logo.png">
+              <img src="images/logo-removebg-preview.png">
               <button class="common-btn">English</button>
             </div>
           </div>
