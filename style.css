@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +8,14 @@
 ::-webkit-scrollbar-track
 {
   border-radius: 10px;
-    background-color: #CCCCCC;
+  background-color: #CCCCCC;
 }
 
-  ::-webkit-scrollbargit
-  {
+::-webkit-scrollbargit
+{
   width: 12px;
   background-color: #F5F5F5;
-  }
+}
 
 ::-webkit-scrollbar-thumb
 {
@@ -54,7 +53,7 @@
   height: 65px;
   overflow: hidden;
   top: 0;
-  z-index: 4 !important;
+  z-index: 9999 !important;
   background-color: #fff;
   transition: top 0.3s;
 }
@@ -105,12 +104,7 @@
   transition: 0.3s;
 }
 .inline-links ul li a:hover {
-  /* background-color: #fc88bf; */
-  /* color: white; */
   color: #000;
-  /* border-bottom: 2px solid #0e0c0c; */
-  /* text-decoration:none; */
-  /* transition: 0.7s all; */
   background-image: linear-gradient(-90deg,#f67c92,#f0556f);
 }
 
@@ -130,10 +124,13 @@
   right: -250px;
   top: 0;
   background: #ffa1b8;
-  z-index: 5;
+  z-index: 9999;
   transition: 0.3s;
   transform: translateX(100%);
   transition: transform .4s cubic-bezier(.4, 0, .2, 1) .2s;
+}
+.nav-div {
+  z-index: 9999;
 }
 .nav-div:hover #sideNav {
   transform: translateX(0);
@@ -155,7 +152,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #000;
-  /* border-bottom: 2px solid #0e0c0c; */
   text-decoration:none;
   transition: 0.7s all;
   background-image: linear-gradient(-90deg,#f67c92,#f0556f);
@@ -182,7 +178,7 @@ nav ul a {
   position: fixed;
   right: 35px;
   top: 13px;
-  z-index: 6 !important;
+  z-index: 9999 !important;
   cursor: pointer;
   opacity: 1;
   display:flex;
@@ -190,30 +186,76 @@ nav ul a {
   background-color: #ffa1b8;
 }
 
+body.dark-mode {
+  background-color: #072540;
+  color : white;
+}
 
+body.light-mode {
+  background-color: #ffffff;
+  color:black;
+}
+.mode-div {
+  font-size: 2rem;
+  background-color: transparent;
+  display: flex;
+  z-index: 9999;
+  font-style: oblique;
+  width: 150px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 50px;
+}
+
+/* toggle */
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  background: grey;
+  border-radius: 100px;
+  transform: translateY(-50%);
+  margin-top: 30px;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 100%;
+  transition: 1s;
+  z-index: 9999;
+}
+
+input:checked + label {
+  background: #f67c92;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
 
 /* --Section header -- */
 #header {
-  padding-top: 45px;
   height: 100vh;
-  /*background-image: url(images/background.png);*/
-  background-position: center;
-  background-size: cover;
-}
-.container {
-  margin-right: 100px;
-  margin-left: 100px;
 }
 
 /* Carousel base class */
 #header div.container-fluid{
   padding: 0;
+  height: 100vh;
 }
 
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -221,21 +263,22 @@ nav ul a {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 600px;
-  background-color: rgb(248, 240, 240);
+  height: 100vh;
+  background-color: #ffa1b8;
 }
 .carousel-inner > .item > img {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   min-width: 100%;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .header-text {
   max-width: 350px;
-
 }
+
 h1 {
   font-size: 34px;
 }
@@ -384,6 +427,7 @@ p {
 }
 .course-left-col {
   flex-basis: 50%;
+
 }
 .course-text {
   max-width: 350px;
@@ -396,22 +440,10 @@ p {
 }
 
 /*--Section testimonials--*/
-#testimonials {
-}
-
-.text-wrapper {
-  width: 70%;
-}
-
 .img-testimonials {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-}
-
-.content {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 #testimonials blockquote::before {
@@ -441,24 +473,6 @@ p {
 }
 
 /*--testimonials Card--*/
-
-/* Three Columns */
-.testimonials-column {
-  float: left;
-  width: 33.33%;
-  padding: 0 10px;
-}
-
-.testimonials-row {
-  margin: 0 -5px;
-}
-
-.testimonials-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .testimonials-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -498,6 +512,11 @@ p {
   width: 33.33%;
   min-width: 200px;
   height: 400px;
+}
+
+.container {
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -544,7 +563,8 @@ form input {
   padding: 18px 0;
 }
 #footer {
-  padding: 50px 0 30px;
+  background-color: white;
+  color: black;
 }
 hr {
   width: 100%;
@@ -597,18 +617,24 @@ hr {
 }
 
 .social-icons {
-  width: 50px;
   position: fixed;
   top: 50%;
-  left: 0;
   transform: translateY(-50%);
+  left: 0;
+  width: 30px;
   z-index: 1;
 }
-.social-icons img {
+.social-icons .fab {
   display: block;
-  width: 20px;
   margin: 0 auto 20px;
   cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  color: #f67c92;
+}
+
+.social-icons .fab:hover {
+  opacity: 0.7;
 }
 
 .footer-social .fab{
@@ -619,6 +645,7 @@ hr {
 }
 .desktop-view-footer {
   display: block;
+  padding-bottom: 30px;
 }
 .mobile-view-footer {
   display: none;
@@ -638,7 +665,6 @@ hr {
     margin-left: 50px;
   }
   .logo {
-    /* margin-top: 27px; */
     width: 70px;
   }
   .header-text {
@@ -676,9 +702,21 @@ hr {
   .course-left-col {
     flex-basis: 100%;
   }
+  .course-text {
+    margin: 50px 50px 0px;
+  }
   .course-right-col {
     flex-basis: 100%;
     margin-top: 70px;
+  }
+
+  .contact-left-col {
+    flex-basis: 100%;
+    margin: 50px 50px 0px;
+  }
+
+  .contact-right-col {
+    flex-basis: 100%;
   }
 
   /* --Mobile view testimonials -- */
@@ -699,17 +737,16 @@ hr {
     background-size: cover;
     width: 33.33%;
     min-width: 300px;
-    height: 500px;
+    height: 400px;
   }
 
   /* --Mobile view Navbar -- */
   .logo-mobile {
     display: block;
     float: left;
-    margin-top: 0px;
+    margin-top: -20px;
     margin-left: 30px;
     width: 100px;
-    padding-bottom: 10px;
   }
   .inline-links {
     display: none;
@@ -721,10 +758,11 @@ hr {
   .mobile-view-footer {
     display: block;
     position: relative;
-    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     background-color: #f1f3f5;
+    padding-bottom: 30px;
+    z-index: 10;
   }
 
   .full-width {
@@ -775,106 +813,4 @@ hr {
   .footer-social .fab:hover {
     opacity: 0.7;
   }
-
 }
-body.dark-mode {
-  background-color: black;
-  color : #f67c92;
-}
-
-body.light-mode {
-  background-color: #ffffff;
-  color:black;
-}
-
-  .button {
-    font-size: 16px;
-    background-color: transparent;
-    text-align: center;
-    width: 10px;
-    position: fixed;
-    top: 19%;
-    right:1rem;
-    transform: translateX(50%);
-    z-index: 1;
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
-    font-style: oblique;
-  }
-
-  .iconleft {
-    font-size: 16px;
-    background-color: transparent;
-    text-align: center;
-    width: 10px;
-    position: fixed;
-    top: 20%;
-    right:14vh;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin-left: 50px;
-    /* margin-right: 20px; */
-    font-style: oblique;
-  }
-
-  /* toggle */
-  input[type=checkbox]{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-  }
-  
-  label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 50px;
-    height: 25px;
-    background: grey;
-    display: block;
-    border-radius: 100px;
-    font-size: 16px;
-    /* background-color: whitesmoke; */
-    text-align: center;
-    width: 55px;
-    position: fixed;
-    top: 20%;
-    right:0;
-    transform: translateY(-50%);
-    z-index: 1;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-style: oblique;
-  }
-  
-  label:after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 25px;
-    height: 25px;
-    background: #fff;
-    border-radius: 90px;
-    transition: 1s;
-  }
-  
-  input:checked + label {
-    background: #f67c92;
-  }
-  
-  input:checked + label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-  }
-  
-  label:active:after {
-    width: 130px;
-  }
-  
-  /* // centering */
-  /* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  } */
