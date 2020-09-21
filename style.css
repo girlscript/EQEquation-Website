@@ -71,29 +71,34 @@
   background-size: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.logo-mobile {
+
+.mobile-top-navbar {
   display: none;
 }
-.inline-links {
+
+.desktop-top-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(255,0,150,0.3);
   backdrop-filter: blur(5px);
-  width: 60%;
-  min-width: 666px;
+  width: 50%;
+  min-width: 500px;
   height: 40px;
   border-radius: 25px;
 }
 
-.inline-links > ul {
+.desktop-top-navbar > ul {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-right: -10px;
   padding-left: -10px;
   margin-bottom: 0px;
+  width: 100%;
 }
-.inline-links > ul > li {
+
+.desktop-top-navbar > ul > li {
   list-style: none;
   display: flex;
   align-items: center;
@@ -101,20 +106,9 @@
   width: 100px;
   height: 40px;
   text-decoration: none;
-  margin-left: 20px;
-  margin-right: 20px;
 }
-@media only screen and (max-width: 1000px) {
-  .inline-links ul li {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .inline-links {
-    width: 70%;
-    min-width: 400px;
-  }
-}
-.inline-links ul li a {
+
+.desktop-top-navbar ul li a {
   display: flex;
   width: 100%;
   height:100%;
@@ -125,7 +119,7 @@
   justify-content: center;
   transition: 0.3s;
 }
-.inline-links ul li a:hover {
+.desktop-top-navbar ul li a:hover {
   color: #000;
   background-image: linear-gradient(-90deg,#f67c92,#f0556f);
 }
@@ -195,7 +189,8 @@ nav ul a {
   color: white;
 }
 #menuBtn {
-  width: 50px;
+  width: 40px;
+  height: 40px;
   position: fixed;
   right: 35px;
   top: 17px;
@@ -203,10 +198,13 @@ nav ul a {
   cursor: pointer;
   opacity: 1;
   display:flex;
-  padding: 5px;
-  background-color: #ffa1b8;
-  background-position: center center;
-  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,0,150,0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  color: white;
+  font-size: 2rem;
 }
 
 body.dark-mode {
@@ -214,7 +212,11 @@ body.dark-mode {
   color : white;
 }
 
-body.dark-mode .inline-links {
+body.dark-mode .desktop-top-navbar {
+  background: rgba(181,181,181,0.4);
+}
+
+body.dark-mode #menuBtn {
   background: rgba(181,181,181,0.4);
 }
 
@@ -688,6 +690,9 @@ hr {
   #header {
     background-image: none;
   }
+  #menuBtn {
+    top: 13px;
+  }
   .container {
     margin-right: 50px;
     margin-left: 50px;
@@ -701,10 +706,7 @@ hr {
   h1 {
     font-size: 25px;
   }
-  #menuBtn {
-    width: 34px;
-    right: 50px;
-  }
+
   .common-btn {
     padding: 10px 16px;
   }
@@ -769,15 +771,30 @@ hr {
   }
 
   /* --Mobile view Navbar -- */
-  .logo-mobile {
-    display: block;
-    float: left;
-    margin-top: -20px;
-    margin-left: 30px;
-    width: 100px;
-  }
-  .inline-links {
+  .desktop-top-navbar {
     display: none;
+  }
+
+  .mobile-top-navbar {
+    display: flex;
+    width: 90%;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .logo-mobile {
+    overflow: hidden;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    display: flex;
+    align-content: center;
+    background-color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px;
   }
 
   .desktop-view-footer {
