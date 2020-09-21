@@ -46,20 +46,30 @@
 
 /* -- Top Navbar -- */
 #top-navbar {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   content: "";
   position: fixed;
   width: 100%;
   height: 65px;
-  overflow: hidden;
   top: 0;
   z-index: 9999 !important;
-  background-color: #fff;
   transition: top 0.3s;
 }
-.logo {
+
+.logo-container {
+  overflow: hidden;
+  height: 60px;
   width: 100px;
-  padding-bottom: 10px;
+  border-radius: 30px;
+  display: flex;
+  align-content: center;
+  background-color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .logo-mobile {
   display: none;
@@ -68,35 +78,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffa1b8;
+  background: rgba(255,0,150,0.3);
+  backdrop-filter: blur(5px);
+  width: 60%;
+  min-width: 666px;
+  height: 40px;
+  border-radius: 25px;
 }
-.inline-links ul {
+
+.inline-links > ul {
   display: flex;
   align-items: center;
   padding-right: -10px;
   padding-left: -10px;
+  margin-bottom: 0px;
 }
-.inline-links ul li {
+.inline-links > ul > li {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100px;
-  height: 65px;
+  height: 40px;
   text-decoration: none;
   margin-left: 20px;
   margin-right: 20px;
 }
 @media only screen and (max-width: 1000px) {
   .inline-links ul li {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .inline-links {
+    width: 70%;
+    min-width: 400px;
   }
 }
 .inline-links ul li a {
   display: flex;
   width: 100%;
   height:100%;
+  border-radius: 25px;
   text-decoration: none;
   color: #fff;
   align-items: center;
@@ -155,7 +177,6 @@ nav ul li a:hover {
   text-decoration:none;
   transition: 0.7s all;
   background-image: linear-gradient(-90deg,#f67c92,#f0556f);
-
 }
 #sideNav .closebtn {
   position: absolute;
@@ -177,13 +198,15 @@ nav ul a {
   width: 50px;
   position: fixed;
   right: 35px;
-  top: 13px;
+  top: 17px;
   z-index: 9999 !important;
   cursor: pointer;
   opacity: 1;
   display:flex;
   padding: 5px;
   background-color: #ffa1b8;
+  background-position: center center;
+  border-radius: 25px;
 }
 
 body.dark-mode {
@@ -191,10 +214,15 @@ body.dark-mode {
   color : white;
 }
 
+body.dark-mode .inline-links {
+  background: rgba(181,181,181,0.4);
+}
+
 body.light-mode {
   background-color: #ffffff;
   color:black;
 }
+
 .mode-div {
   font-size: 2rem;
   background-color: transparent;
