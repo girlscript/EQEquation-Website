@@ -45,17 +45,22 @@
 }
 
 /* -- Top Navbar -- */
-#top-navbar {
+.desktop-top-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   content: "";
   position: fixed;
   width: 100%;
-  height: 65px;
+  height: 80px;
   top: 0;
-  z-index: 9999 !important;
+  z-index: 4 !important;
   transition: top 0.3s;
+  backdrop-filter: blur(10px)saturate(100%);
+  -webkit-backdrop-filter: blur(12px) saturate(50%);
+  background: rgba(255,0,150,0.3);
+  border-radius: 25px;
+  
 }
 
 .logo-container {
@@ -76,17 +81,7 @@
   display: none;
 }
 
-.desktop-top-navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255,0,150,0.3);
-  backdrop-filter: blur(5px);
-  width: 50%;
-  min-width: 500px;
-  height: 40px;
-  border-radius: 25px;
-}
+
 
 .desktop-top-navbar > ul {
   display: flex;
@@ -95,7 +90,7 @@
   padding-right: -10px;
   padding-left: -10px;
   margin-bottom: 0px;
-  width: 100%;
+  width: 80%;
 }
 
 .desktop-top-navbar > ul > li {
