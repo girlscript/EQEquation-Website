@@ -283,6 +283,7 @@ input:checked + label:after {
 
 /* -- Hero Section-- */
 
+
 .hero-section{
   background: #800080;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffc0cb, #da8dda);  /* Chrome 10-25, Safari 5.1-6 */
@@ -294,6 +295,13 @@ input:checked + label:after {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width:500px){
+
+  
+.hero-section{
+ height: 70vh;
+}
+}
 
 .hero-container {
   display: flex;
@@ -304,11 +312,21 @@ input:checked + label:after {
   text-align: center;
 }
 
+
+
 .hero-container h1{
   font-size: 6vw;
   margin-bottom: 5vh;
+  text-shadow: 3px 4px;
 
 }
+@media screen and (max-width:500px){
+  .hero-section h1{
+    text-shadow: 2px 2px;
+  }
+
+}
+
 
 .hero-container p{
   width: 50vw;
@@ -316,6 +334,8 @@ input:checked + label:after {
   line-height: 1em;
 }
 .hero-container button{
+  box-shadow: 2px 4px;
+  color: #072540;
   padding: 1vh;
   font-size: large;
   border: none;
