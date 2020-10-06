@@ -46,6 +46,7 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
 // Initialize Swiper
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
@@ -63,6 +64,7 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
 });
+
 //Dark mode
 function toggleDarkLight() {
   var body = document.getElementById("body");
