@@ -292,14 +292,14 @@ input:checked + label:after {
 }
 
 .hero-container h1{
-  font-size: 5vw;
+  font-size: 6vw;
   margin-bottom: 5vh;
 
 }
 
 .hero-container p{
   width: 50vw;
-  font-size: 2vw;
+  font-size: 2.5vw;
   line-height: 1em;
 }
 .hero-container button{
