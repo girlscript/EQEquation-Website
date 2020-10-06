@@ -295,13 +295,6 @@ input:checked + label:after {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width:500px){
-
-  
-.hero-section{
- height: 70vh;
-}
-}
 
 .hero-container {
   display: flex;
