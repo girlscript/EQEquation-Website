@@ -60,7 +60,7 @@
   -webkit-backdrop-filter: blur(12px) saturate(50%);
   background: rgba(255,0,150,0.3);
   border-radius: 25px;
-  
+
 }
 
 .logo-container {
@@ -275,16 +275,16 @@ input:checked + label:after {
 
 .hero-section{
   background: #800080;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ffc0cb, #da8dda);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ffc0cb, #d88fd8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-flex-wrap: wrap;
-border: 1px solid black;
-height: 100vh;
-
+  background: -webkit-linear-gradient(to right, #ffc0cb, #da8dda);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffc0cb, #d88fd8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  height: 100vh;
+  width: 100%;
 
 
 }
@@ -296,11 +296,11 @@ height: 100vh;
 
 .hero-section p{
   justify-content:space-between;
-  
+
   width: 80vh;
-  
-  
-  font-size: 4vh;  
+
+
+  font-size: 4vh;
 }
 .hero-section button{
   padding: 1vh;
