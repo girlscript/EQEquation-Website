@@ -59,8 +59,6 @@
   backdrop-filter: blur(10px)saturate(100%);
   -webkit-backdrop-filter: blur(12px) saturate(50%);
   background: rgba(255,0,150,0.3);
-  border-radius: 25px;
-
 }
 
 .logo-container {
@@ -294,14 +292,14 @@ input:checked + label:after {
 }
 
 .hero-container h1{
-  font-size: 10vh;
+  font-size: 5vw;
   margin-bottom: 5vh;
 
 }
 
 .hero-container p{
   width: 50vw;
-  font-size: 4vh;
+  font-size: 2vw;
   line-height: 1em;
 }
 .hero-container button{
