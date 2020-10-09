@@ -39,7 +39,7 @@
   left: 0;
   position: fixed;
   top: 0;
-  transition: opacity 0.3s linear;
+  transition: opacity 1.3s linear;
   width: 100%;
   z-index: 9999;
 }
@@ -55,7 +55,7 @@
   height: 80px;
   top: 0;
   z-index: 9999 !important;
-  transition: top 0.3s;
+  transition: top 1.3s;
 }
 
 .desktop-top-navbar {
@@ -123,7 +123,7 @@
   color: #fff;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: 1.3s;
 }
 .desktop-top-navbar ul li a:hover {
   color: #000;
@@ -147,7 +147,7 @@
   top: 0;
   background: #ffa1b8;
   z-index: 9999;
-  transition: 0.3s;
+  transition: 1.3s;
   transform: translateX(100%);
   transition: transform .4s cubic-bezier(.4, 0, .2, 1) .2s;
 }
@@ -156,7 +156,7 @@
 }
 .nav-div:hover #sideNav {
   transform: translateX(0);
-  transition-delay: 0.3s;
+  transition-delay: 1.3s;
 }
 nav ul li {
   list-style: none;
@@ -170,7 +170,7 @@ nav ul li a {
   font-size: 15px;
   color: #fff;
   display: block;
-  transition: 0.3s;
+  transition: 1.3s;
 }
 nav ul li a:hover {
   color: #000;
@@ -316,8 +316,8 @@ input:checked + label:after {
   line-height: 1em;
 }
 .hero-container button{
-  padding: 1vh;
-  font-size: large;
+  padding: 1vh 1.5vh;
+  font-size: 14px;
   border: none;
   background-color: gold;
   border-radius: 20px;
@@ -695,7 +695,7 @@ hr {
 .footer-logo button {
   padding: 12px 38px;
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 12px;
 }
 .copyright-text,
 .footer-logo {
@@ -770,6 +770,12 @@ hr {
     width: 14px;
     margin: 15px auto;
   }
+  .hero-container h1{
+    font-size: 6.5vw;
+  }
+  .hero-container p{
+    font-size: 4.0vw;
+  }
   .about-left-col,
   .about-right-col {
     flex-basis: 100%;
@@ -838,7 +844,11 @@ hr {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+    z-index: 4 !important;
+    backdrop-filter: blur(10px)saturate(100%);
+    -webkit-backdrop-filter: blur(12px) saturate(50%);
+    background: rgba(255, 255, 255, 0.3);
+    }
 
   .logo-mobile {
     overflow: hidden;
@@ -884,6 +894,9 @@ hr {
     justify-content: space-between;
     align-items: center;
   }
+  .copyright-text small{
+    font-size: 13.5px;
+  }
 
   #footer ul {
     width:100%;
@@ -913,5 +926,5 @@ hr {
 
   .footer-social .fab:hover {
     opacity: 0.7;
-  }
+  } 
 }
