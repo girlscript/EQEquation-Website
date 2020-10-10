@@ -19,16 +19,29 @@ function fadeEffect () {
   }
 }
 
-var menuBtn = document.getElementById("menuBtn");
-var sideNav = document.getElementById("sideNav");
-sideNav.style.right = "-250px"
-menuBtn.onclick = function(){
-  if(sideNav.style.right == "-250px"){
-    sideNav.style.right = "0"
+var sidenav = document.getElementById("sideNav");
+var main = document.getElementById("main");
+var menu = document.getElementById("menuBtn");
+
+
+function openNav() {
+  sidenav.style.width = "250px"
+  main.style.transform = "translateX(-250px)"
+  main.style.transition = "transform 1s"
+  menu.onclick = function() {
+    closeNav();
   }
-  else{
-    sideNav.style.right = "-250px"
+  menu.className = "far fa-times-circle"
+}
+
+function closeNav() {
+  sidenav.style.width = "0"
+  main.style.transform = "translateX(0)"
+  main.style.transition = "transform 0.3s"
+  menu.onclick = function() {
+    openNav();
   }
+  menu.className = "fas fa-bars"
 }
 
 var scroll = new SmoothScroll('a[href*="#"]',{
