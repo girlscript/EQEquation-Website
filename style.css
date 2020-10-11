@@ -9,8 +9,8 @@ a:hover {
   text-decoration: none !important
 }
 
- a:active {
-   text-decoration: none !important
+a:active {
+  text-decoration: none !important
 }
 
 ::-webkit-scrollbar-track
@@ -80,16 +80,16 @@ a:hover {
 }
 
 .logo-container {
-  overflow: hidden;
-  height: 60px;
-  width: 250px;
-  border-radius: 30px;
-  display: flex;
-  align-content: center;
   background-color: white;
-  background-position: -3px;
-  background-repeat: no-repeat;
-  background-size: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px;
+  -webkit-box-shadow: -5px 5px 10px 0px rgba(212,212,212,1);
+  -moz-box-shadow: -5px 5px 10px 0px rgba(212,212,212,1);
+  box-shadow: -5px 5px 10px 0px rgba(212,212,212,1);
 }
 
 .mobile-top-navbar {
@@ -118,6 +118,7 @@ a:hover {
 
 .desktop-top-navbar > ul > li:nth-child(3){
   width: 250px;
+
 }
 
 .desktop-top-navbar ul li a {
