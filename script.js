@@ -86,3 +86,8 @@ function toggleDarkLight() {
 }
 
 var tilt = $('.js-tilt').tilt();
+
+//aos
+AOS.init({
+  once:false,
+});
