@@ -15,7 +15,6 @@ a:hover {
 
 ::-webkit-scrollbar-track
 {
-  border-radius: 10px;
   background-color: #CCCCCC;
 }
 
@@ -84,11 +83,11 @@ a:hover {
   overflow: hidden;
   height: 60px;
   width: 250px;
-  border-radius: 0px;
+  border-radius: 30px;
   display: flex;
   align-content: center;
-  /* background-color: white; */
-  background-position: center center;
+  background-color: white;
+  background-position: -3px;
   background-repeat: no-repeat;
   background-size: 100px;
 }
