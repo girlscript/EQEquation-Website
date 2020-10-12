@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ==" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-
+  <!--aos-->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
@@ -83,10 +83,10 @@
         </div>
         <div class="main-hero-content">
           <div class="text-container">
-            <h1  data-aos="fade-left" data-aos-duration="2000" >Align IQ with EQ to escalate YOUR potential</h1>
-            <h2  data-aos="fade-left" data-aos-duration="2100" >Strategically enhancing leadership, communities, individuals and adolescents</h2>
+            <h1>Align IQ with EQ to escalate YOUR potential</h1>
+            <h2>Strategically enhancing leadership, communities, individuals and adolescents</h2>
             <br>
-            <button data-aos="fade-up" data-aos-duration="2200">Book Now</button>
+            <button>Book Now</button>
           </div>
         </div>
       </div>
@@ -94,13 +94,13 @@
     <!--Hero Section-->
     <section class="hero-section">
       <div class="hero-container">
-        <h1 data-aos="fade-up" data-aos-duration="1000">
+        <h1>
           <strong>
             The Purpose is to teach,<br>
             bring learning to people.
           </strong>
         </h1>
-        <p data-aos="fade-up" data-aos-duration="1000">
+        <p>
           Lorem ipsum dolor sit amet consectetur,
           adipisicing elit. Officiis cum error facilis
         </p>
@@ -113,7 +113,7 @@
     <!--about-->
 
     <section id="about">
-      <div  class="about-left-col" data-aos="fade-right" data-aos-duration="2000">
+      <div  class="about-left-col" data-aos="fade-up" data-aos-duration="1000">
         <img src="images/about.png">
       </div>
       <div class="about-right-col">
@@ -187,7 +187,7 @@
             </div>
           </div>
         </div>
-        <div class="course-right-col"  data-aos="fade-left" data-aos-duration="2000">
+        <div class="course-right-col"  data-aos="fade-up" data-aos-duration="1000">
           <img src="images/course.png">
         </div>
       </div>
@@ -196,7 +196,7 @@
     <!--offer-->
 
     <section id="offer">
-      <div  data-aos="fade-right" data-aos-duration="2000" class="about-left-col">
+      <div  data-aos="fade-up" data-aos-duration="1000" class="about-left-col">
         <img src="images/offer.png">
       </div>
       <div class="about-right-col">
@@ -309,7 +309,7 @@
             <span class="line-3"></span>
           </div>
         </div>
-        <div class="contact-right-col" data-aos="fade-right" data-aos-duration="3000">
+        <div class="contact-right-col" data-aos="fade-up" data-aos-duration="1000">
           <img src="images/contact.png">
         </div>
       </div>
@@ -455,9 +455,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
   <!-- External Script -->
   <script src="./script.js"></script>
-  
   <script>
-    AOS.init();
+AOS.init({
+  once:true,
+});
   </script>
+
 </body>
 </html>
