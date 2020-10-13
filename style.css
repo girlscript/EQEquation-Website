@@ -788,6 +788,7 @@ form input {
 #footer {
   background-color: white;
   color: black;
+  overflow-x: hidden;
 }
 hr {
   width: 100%;
