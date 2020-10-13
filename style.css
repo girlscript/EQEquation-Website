@@ -788,7 +788,6 @@ form input {
 #footer {
   background-color: white;
   color: black;
-  overflow-x: hidden;
 }
 hr {
   width: 100%;
@@ -806,7 +805,7 @@ hr {
   margin-top: 5px;
 }
 .footer-right-col {
-  flex-basis: 45%;
+  flex-basis: 10%;
   margin-top: 5px;
 }
 .footer-links {
@@ -891,11 +890,6 @@ hr {
   }
 }
 
-@media only screen and (max-width: 1000px){
-  .footer-right-col {
-    margin-right: -50px;
-  }
-}
 @media only screen and (max-width: 770px) {
   #menuBtn {
     top: 20px;
