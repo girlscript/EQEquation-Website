@@ -782,6 +782,9 @@ form input {
   flex-basis: 48%;
   padding: 18px 0;
 }
+
+/* Footer  */
+  
 #footer {
   background-color: white;
   color: black;
@@ -798,11 +801,12 @@ hr {
   flex-wrap: wrap;
 }
 .footer-left-col {
-  flex-basis: 50%;
-  margin-top: 60px;
+  flex-basis: 55%;
+  margin-top: 5px;
 }
 .footer-right-col {
-  flex-basis: 35%;
+  flex-basis: 45%;
+  margin-top: 5px;
 }
 .footer-links {
   display: flex;
@@ -824,12 +828,12 @@ hr {
   flex-wrap: wrap;
 }
 .footer-logo img {
-  width: 250px;
+  width: 230px;
 }
 .footer-logo button {
-  padding: 12px 38px;
+  padding: 11px 34px;
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .copyright-text,
 .footer-logo {
@@ -864,6 +868,14 @@ hr {
 .footer-social .fab:hover{
   opacity: 0.7;
 }
+.bottom-bar {
+  position: relative;
+  text-align: center;
+  font-size: .9em;
+  margin: auto;
+  padding: 0 0 0 0;
+  color: #777777;
+}
 .desktop-view-footer {
   display: block;
   padding-bottom: 30px;
@@ -878,6 +890,11 @@ hr {
   }
 }
 
+@media only screen and (max-width: 1000px){
+  .footer-right-col {
+    margin-right: -50px;
+  }
+}
 @media only screen and (max-width: 770px) {
   #menuBtn {
     top: 20px;
