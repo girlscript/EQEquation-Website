@@ -22,12 +22,14 @@ function fadeEffect () {
 var sidenav = document.getElementById("sideNav");
 var main = document.getElementById("main");
 var menu = document.getElementById("menuBtn");
-
+var footer = document.getElementById('footer');
 
 function openNav() {
   sidenav.style.width = "250px"
   main.style.transform = "translateX(-250px)"
   main.style.transition = "transform 1s"
+  footer.style.transform = "translateX(-250px)"
+  footer.style.transition = "transform 1s"
   menu.onclick = function() {
     closeNav();
   }
@@ -38,6 +40,8 @@ function closeNav() {
   sidenav.style.width = "0"
   main.style.transform = "translateX(0)"
   main.style.transition = "transform 0.3s"
+  footer.style.transform = "translateX(0)"
+  footer.style.transition = "transform 0.3s"
   menu.onclick = function() {
     openNav();
   }
