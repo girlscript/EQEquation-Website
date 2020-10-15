@@ -294,7 +294,8 @@ input:checked + label:after {
   height: 100vh;
   min-height: 520px;
   position: relative;
-  left:-15px;
+  left:-15px; 
+  width: 80%;
 }
 
 .main-hero-container {
@@ -442,10 +443,41 @@ input:checked + label:after {
 }
 
 .hero-container h1{
-  font-size: 6vw;
+  font-size: 20px;
   margin-bottom: 5vh;
 
 }
+.container .box { 
+  /* width:540px;  */
+  margin: 150px; 
+  display:table; 
+padding: 200px 200px;
+} 
+.container .box .box-row { 
+  display:table-row; 
+  
+} 
+.container .box .box-cell { 
+  display:table-cell; 
+  /* width:50%;  */
+  padding:10px; 
+} 
+.box1 { 
+  color:black; 
+  padding: 0 200px 0 200px;
+
+  text-align:center;
+
+}
+.h-blue{
+  color: blue;
+} 
+.box2 { 
+
+  text-align:center; 
+  padding: 0 200px;
+} 
+
 
 .hero-container p{
   width: 50vw;
