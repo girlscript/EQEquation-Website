@@ -294,7 +294,8 @@ input:checked + label:after {
   height: 100vh;
   min-height: 520px;
   position: relative;
-  left:-15px;
+  left:-15px; 
+  
 }
 
 .main-hero-container {
@@ -425,7 +426,7 @@ input:checked + label:after {
   background: #800080;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffc0cb, #da8dda);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ffc0cb, #d88fd8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -438,18 +439,44 @@ input:checked + label:after {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: center; 
+  padding: 20px;
 }
 
 .hero-container h1{
-  font-size: 6vw;
+  font-size: 2rem;
   margin-bottom: 5vh;
+}
+.container .box { 
+  /* width:540px;  */
+  display:flex;
+  margin: 150px; 
+  flex-wrap: wrap;
+} 
+.container .box .box-cell { 
+  /* display:table-cell;  */
+  /* width:50%;  */
+  padding:10px; 
+} 
+.box1 { 
+  color:black; 
+  padding: 0 200px 0 200px;
+  flex-basis: 50%;
+  text-align:center;
 
 }
+.h-blue{
+  color: blue;
+} 
+.box2 { 
+  text-align:center; 
+  padding: 0 200px;
+  flex-basis: 50%;
+} 
 
 .hero-container p{
   width: 50vw;
-  font-size: 2.5vw;
+  font-size: 0.5rem;
   line-height: 1em;
 }
 .hero-container button{
@@ -933,7 +960,7 @@ hr {
   }
 
   .hero-container h1{
-    font-size: 6.5vw;
+    font-size: 3.5vw;
   }
   .hero-container p{
     font-size: 4.0vw;
