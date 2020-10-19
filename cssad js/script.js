@@ -19,33 +19,16 @@ function fadeEffect () {
   }
 }
 
-var sidenav = document.getElementById("sideNav");
-var main = document.getElementById("main");
-var menu = document.getElementById("menuBtn");
-var footer = document.getElementById('footer');
-
-function openNav() {
-  sidenav.style.width = "250px"
-  main.style.transform = "translateX(-250px)"
-  main.style.transition = "transform 1s"
-  footer.style.transform = "translateX(-250px)"
-  footer.style.transition = "transform 1s"
-  menu.onclick = function() {
-    closeNav();
+var menuBtn = document.getElementById("menuBtn");
+var sideNav = document.getElementById("sideNav");
+sideNav.style.right = "-250px"
+menuBtn.onclick = function(){
+  if(sideNav.style.right == "-250px"){
+    sideNav.style.right = "0"
   }
-  menu.className = "far fa-times-circle"
-}
-
-function closeNav() {
-  sidenav.style.width = "0"
-  main.style.transform = "translateX(0)"
-  main.style.transition = "transform 0.3s"
-  footer.style.transform = "translateX(0)"
-  footer.style.transition = "transform 0.3s"
-  menu.onclick = function() {
-    openNav();
+  else{
+    sideNav.style.right = "-250px"
   }
-  menu.className = "fas fa-bars"
 }
 
 var scroll = new SmoothScroll('a[href*="#"]',{
@@ -63,7 +46,6 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-
 // Initialize Swiper
 var swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
@@ -81,12 +63,9 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
   },
 });
-
 //Dark mode
 function toggleDarkLight() {
   var body = document.getElementById("body");
   var currentClass = body.className;
   body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 }
-
-var tilt = $('.js-tilt').tilt();
