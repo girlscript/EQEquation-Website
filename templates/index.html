@@ -1,28 +1,106 @@
-{% extends "main_template.html" %}
-{% block title %}EQEquation{% endblock %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>EQEquation</title>
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
+  <!-- styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- SmoothScroll -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"
+    integrity="sha512-wDH73bv6rW6O6ev5DGYexNboWMzBoY+1TEAx5Q/sdbqN2MB2cNTG9Ge/qv3c1QNvuiAuETsKJnnHH2UDJGmmAQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css"
+    integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ=="
+    crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+    integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <!--aos-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<body id="body" class="light-mode">
+
+  <header>
+    <div class="preloader">
+      <img src="./images/preloader.gif" alt="spinner">
+    </div>
+
+    <div id="top-navbar">
+      <div class="desktop-top-navbar">
+        <ul>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li>
+            <div class="logo-container"><img src="./images/newlogo.png" style="max-width: 100%;height:auto;"></div>
+          </li>
+          <li><a href="#courses">COURSES</a></li>
+          <li><a href="#offer">OFFER</a></li>
+        </ul>
+      </div>
+      <div class="mobile-top-navbar">
+        <div class="logo-mobile" style="background-image: url('./images/newlogo.png'); background-size: contain;"></div>
+        </li>
+      </div>
+    </div>
+
+    <div class="nav-div">
+      <nav id="sideNav">
+        <ul>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#courses">COURSES</a></li>
+          <li><a href="#offer">OFFER</a></li>
+          <li><a href="#testimonials">TESTIMONIALS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="mode-div">
+          <i class="fas fa-sun"></i>
+          <input type="checkbox" id="switch" onclick="toggleDarkLight()" />
+          <label for="switch"></label>
+          <i class="fas fa-moon"></i>
+        </div>
+      </nav>
+      <i class="fas fa-bars" id="menuBtn" onclick="openNav()"></i>
+    </div>
+  </header>
+
   <main id="main">
-
-
-
-
-
     <div class="social-icons">
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
-
-
-
     <section class="main-hero-section" id="header">
       <div class="main-hero-container">
         <div class="main-hero-img">
           <a href="#" class="c-logo js-tilt" data-tilt-glare="true" data-tilt-maxglare=".6" data-tilt-speed="400"
             data-tilt-scale="1.1" data-tilt-maxtilt="50" data-tilt-perspective="500">
             <span class="backdrop"></span>
-            <span><img src="{{url_for('static', filename='images/nobghero2.png')}}"></span>
+            <span><img src="./images/nobghero2.png"></span>
           </a>
         </div>
         <div class="main-hero-content">
@@ -35,9 +113,6 @@
         </div>
       </div>
     </section>
-
-
-
     <!--Hero Section-->
     <section class="hero-section">
       <div class="hero-container">
@@ -83,19 +158,11 @@
     </section>
 
 
-
-
-
-
-
-
-
-
     <!--about-->
 
     <section id="about">
       <div class="about-left-col" data-aos="fade-up" data-aos-duration="1000">
-        <img src="{{url_for('static', filename='images/about.png')}}">
+        <img src="images/about.png">
       </div>
       <div class="about-right-col">
         <div class="about-text">
@@ -119,32 +186,22 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
     <!---features-->
 
     <section id="features">
       <div class="feature-row">
         <div class="feature-col" data-aos="fade-up" data-aos-duration="800">
-          <img src="{{url_for('static', filename='images/pic-1.png')}}">
+          <img src="images/pic-1.png">
           <h4>Hello everyone</h4>
           <p>Switch between your computerbhb</p>
         </div>
         <div class="feature-col" data-aos="fade-up" data-aos-duration="800">
-          <img src="{{url_for('static', filename='images/pic-2.png')}}">
+          <img src="images/pic-2.png">
           <h4>Hello everyone</h4>
           <p>Switch between your computerbhb</p>
         </div>
         <div class="feature-col" data-aos="fade-up" data-aos-duration="800">
-          <img src="{{url_for('static', filename='images/pic-3.png')}}">
+          <img src="images/pic-3.png">
           <h4>Hello everyone</h4>
           <p>Switch between your computerbhb</p>
         </div>
@@ -158,15 +215,6 @@
         <button class="common-btn" data-aos="fade-up" data-aos-duration="1000">Start Free Trial</button>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
 
     <!--courses-->
 
@@ -190,26 +238,16 @@
           </div>
         </div>
         <div class="course-right-col" data-aos="fade-up" data-aos-duration="1000">
-          <img src="{{url_for('static', filename='images/course.png')}}">
+          <img src="images/course.png">
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
 
     <!--offer-->
 
     <section id="offer">
       <div data-aos="fade-up" data-aos-duration="1000" class="about-left-col">
-        <img src="{{url_for('static', filename='images/offer.png')}}">
+        <img src="images/offer.png">
       </div>
       <div class="about-right-col">
         <div class="about-text">
@@ -229,15 +267,6 @@
         </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
 
     <!--TESTIMONIALS-->
     <section id="testimonials">
@@ -333,19 +362,6 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section id="contact">
       <div class="container contact-row">
         <div class="contact-left-col">
@@ -369,22 +385,147 @@
           </div>
         </div>
         <div class="contact-right-col" data-aos="fade-up" data-aos-duration="1000">
-          <img src="{{url_for('static', filename='images/contact.png')}}">
+          <img src="images/contact.png">
         </div>
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-    
-
   </main>
 
-      {% endblock %}
-      
+  <section data-aos="fade-up" data-aos-duration="1500" id="footer">
+    <div class="desktop-view-footer">
+      <div class="container footer-row">
+        <hr>
+        <div class="footer-left-col">
+          <div class="footer-links">
+            <div class="link-title">
+              <h4>Product</h4>
+              <small>Our Plan</small><br>
+              <small>Free trial</small>
+            </div>
+            <div class="link-title">
+              <h4>About Us</h4>
+              <small>Request us</small><br>
+              <small>Contact</small>
+            </div>
+            <div class="link-title">
+              <h4>Support</h4>
+              <small>Features & FAQs</small><br>
+              <small>Find a Solution</small>
+            </div>
+            <div class="link-title">
+              <h4>Follow Us</h4>
+              <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-right-col">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <img src="./images/newlogo.png">
+              <button class="common-btn">English</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="bottom-bar">
+          support@xypo.com | Copyright © 2020 Ritesh
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-view-footer">
+      <h3 style="color:#86868b"> EQEquation </h3>
+      <div class="footer-line-break"></div>
+      <div class="dropdown full-width">
+        <button class="btn dropdown-toggle relbtn" type="button" data-toggle="dropdown">
+          <div class="toggleBtn">
+            <span>Product</span>
+            <span class="caret"></span>
+          </div>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" style="font-size: 15px;">Our Plan</a></li>
+          <li><a href="#" style="font-size: 15px;">Free Trial</a></li>
+        </ul>
+      </div>
+      <div class="footer-line-break"></div>
+      <div class="dropdown full-width">
+        <button class="btn dropdown-toggle relbtn" type="button" data-toggle="dropdown">
+          <div class="toggleBtn">
+            <span>About Us</span>
+            <span class="caret"></span>
+          </div>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" style="font-size: 15px;">Request Us</a></li>
+          <li><a href="#" style="font-size: 15px;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-line-break"></div>
+      <div class="dropdown full-width">
+        <button class="btn dropdown-toggle relbtn" type="button" data-toggle="dropdown">
+          <div class="toggleBtn">
+            <span>Support</span>
+            <span class="caret"></span>
+          </div>
+        </button>
+        <ul class="dropdown-menu ">
+          <li><a href="#" style="font-size: 15px;">Features</a></li>
+          <li><a href="#" style="font-size: 15px;">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-line-break"></div>
+      <div class="dropdown full-width">
+        <button class="btn dropdown-toggle relbtn" type="button" data-toggle="dropdown">
+          <div class="toggleBtn">
+            <span>Support</span>
+            <span class="caret"></span>
+          </div>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#" style="font-size: 15px;">Find a Profit</a></li>
+          <li><a href="#" style="font-size: 15px;">Solution</a></li>
+        </ul>
+      </div>
+      <div class="footer-line-break"></div>
+      <div class="footer-social">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-line-break"></div>
+      <div class="footer-info">
+        <div class="copyright-text">
+          <small>support@xypo.com</small><br>
+          <small>copyright 2020 ritesh</small>
+        </div>
+        <div class="footer-logo">
+          <img src="./images/newlogo.png">
+          <button class="common-btn">English</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"
+    integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww=="
+    crossorigin="anonymous"></script>
+  <!-- External Script -->
+  <script src="./script.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+    });
+  </script>
+
+</body>
+
+</html>
