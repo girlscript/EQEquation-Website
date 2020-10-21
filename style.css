@@ -50,6 +50,40 @@ a:active {
   width: 100%;
   z-index: 9999;
 }
+/* -- Landng Page -- */
+.landing-page-bar {
+  position: relative;
+  padding: 20px;
+  width: calc(100% - 100px);
+  height: 100px;
+}
+
+.desktop-page-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:50px;
+}
+.desktop-page-bar > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.desktop-page-bar > ul > li {
+  padding-left: 30px;
+  list-style: none;
+  white-space: nowrap;
+
+}
+.desktop-page-bar > ul > li > a{
+  text-decoration: none;
+  text-decoration: none;
+  color: #444;
+  font-size:20px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
 
 /* -- Top Navbar -- */
 #top-navbar {
@@ -63,6 +97,7 @@ a:active {
   top: 0;
   z-index: 9998 !important;
   transition: top 1.3s;
+  top: -80px;
 }
 
 .desktop-top-navbar {
@@ -111,14 +146,13 @@ a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 110px;
   height: 40px;
   text-decoration: none;
 }
 
 .desktop-top-navbar > ul > li:nth-child(3){
   width: 250px;
-
 }
 
 .desktop-top-navbar ul li a {
@@ -131,6 +165,8 @@ a:active {
   align-items: center;
   justify-content: center;
   transition: 1.3s;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
 }
 .desktop-top-navbar ul li a:hover {
   color: #000;
@@ -172,11 +208,12 @@ nav ul li {
 nav ul li a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   display: block;
   transition: 1.3s;
   white-space: nowrap;
+  font-family: 'Ubuntu', sans-serif;
 }
 nav ul li a:hover {
   color: #000;
@@ -291,11 +328,9 @@ input:checked + label:after {
 }
 
 .main-hero-section {
-  height: 100vh;
+  height: calc(100vh - 100px);
   min-height: 520px;
   position: relative;
-  left:-15px; 
-  
 }
 
 .main-hero-container {
@@ -496,9 +531,6 @@ input:checked + label:after {
 
 
 /* --Section header -- */
-#header {
-  height: 100vh;
-}
 
 /* Carousel base class */
 #header div.container-fluid{
@@ -772,6 +804,9 @@ p {
   .img-testimonials-card {
     margin-top: -7.5vw;
   }
+  .desktop-top-navbar ul li a {
+    font-size: 15px;
+  }
 }
 
 /*-- Section Contact --*/
@@ -945,7 +980,11 @@ hr {
     width: 14px;
     margin: 15px auto;
   }
-
+  .main-hero-section {
+    left:-15px; 
+    height: 100vh;
+    min-height: 900px;
+  }
   .main-hero-container {
     flex-direction: column;
     text-align: center;
@@ -1022,6 +1061,9 @@ hr {
   }
 
   /* --Mobile view Navbar -- */
+  .landing-page-bar{
+    display: none;
+  }
   .desktop-top-navbar {
     display: none;
   }

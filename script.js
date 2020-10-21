@@ -23,6 +23,7 @@ var sidenav = document.getElementById("sideNav");
 var main = document.getElementById("main");
 var menu = document.getElementById("menuBtn");
 var footer = document.getElementById('footer');
+var header = document.getElementById('header');
 
 function openNav() {
   sidenav.style.width = "250px"
@@ -30,6 +31,8 @@ function openNav() {
   main.style.transition = "transform 1s"
   footer.style.transform = "translateX(-250px)"
   footer.style.transition = "transform 1s"
+  header.style.transform = "translateX(-250px)"
+  header.style.transition = "transform 1s"
   menu.onclick = function() {
     closeNav();
   }
@@ -42,6 +45,8 @@ function closeNav() {
   main.style.transition = "transform 0.3s"
   footer.style.transform = "translateX(0)"
   footer.style.transition = "transform 0.3s"
+  header.style.transform = "translateX(0)"
+  header.style.transition = "transform 0.3s"
   menu.onclick = function() {
     openNav();
   }
@@ -55,13 +60,17 @@ var scroll = new SmoothScroll('a[href*="#"]',{
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("top-navbar").style.top = "0";
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("top-navbar").style.top = "0";
+    } else {
+      document.getElementById("top-navbar").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
   } else {
     document.getElementById("top-navbar").style.top = "-80px";
   }
-  prevScrollpos = currentScrollPos;
 }
 
 // Initialize Swiper
