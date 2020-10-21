@@ -162,7 +162,13 @@ a:active {
 #main {
   transition: transform 1s;
 }
+<<<<<<< HEAD:static/style.css
 
+=======
+content-last {
+  line-height: 100px;
+}
+>>>>>>> 770709e3ca90959152050d3b6ac0dd900142870e:style.css
 nav ul li {
   list-style: none;
   margin: 10px 20px;
@@ -580,6 +586,12 @@ p {
 .line {
   line-height: 8px;
 }
+p.a{
+  margin: 50px;
+  text-align:center;
+  white-space:pre-wrap
+
+}
 
 /*----Section about----*/
 
@@ -927,6 +939,11 @@ hr {
   .container {
     margin-right: 50px;
     margin-left: 50px;
+  }
+  .container1 {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top:500px;
   }
   .logo {
     width: 70px;
