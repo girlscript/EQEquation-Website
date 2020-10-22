@@ -330,7 +330,8 @@ body.dark-mode .c-logo {
 }
 
 body.light-mode {
-  background-color: #ffffff;
+  background: rgb(255,253,208);
+background: linear-gradient(0deg, rgba(255,253,208,1) 0%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
   color: black;
 }
 
@@ -385,6 +386,7 @@ input:checked + label:after {
 }
 
 .main-hero-section {
+  
   height: calc(100vh - 90px);
   min-height: 520px;
   position: relative;
@@ -418,7 +420,9 @@ input:checked + label:after {
 }
 
 .text-container h1 {
-  font-family: "Libre Baskerville", serif;
+  /* font-family: "Libre Baskerville", serif; */
+  font-family: "Yoxall";
+  font-size:calc(1px + 5vh);
 }
 
 .text-container button {
@@ -531,23 +535,14 @@ input:checked + label:after {
 /* -- Hero Section-- */
 
 .hero-section {
-  background: #800080; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffc0cb,
-    #da8dda
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffc0cb,
-    #d88fd8
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 120vh;
+  min-height: 700px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .hero-container {
   display: flex;
@@ -803,7 +798,13 @@ p {
   height: 200px;
   border-radius: 50%;
 }
-
+#testimonials {
+  height: 100vh;
+  min-height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 #testimonials blockquote::before {
   content: open-quote;
 }
@@ -933,7 +934,7 @@ form input {
 /* Footer  */
 
 #footer {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   color: black;
 }
 hr {
