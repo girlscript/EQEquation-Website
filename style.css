@@ -330,7 +330,7 @@ body.dark-mode .c-logo {
 }
 
 body.light-mode {
-  background-color: #ffffff;
+  background-color: #fffdd0;
   color: black;
 }
 
@@ -418,7 +418,9 @@ input:checked + label:after {
 }
 
 .text-container h1 {
-  font-family: "Libre Baskerville", serif;
+  /* font-family: "Libre Baskerville", serif; */
+  font-family: "Yoxall";
+  font-size: 50px;
 }
 
 .text-container button {
@@ -803,7 +805,12 @@ p {
   height: 200px;
   border-radius: 50%;
 }
-
+#testimonials {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 #testimonials blockquote::before {
   content: open-quote;
 }
@@ -933,7 +940,7 @@ form input {
 /* Footer  */
 
 #footer {
-  background-color: white;
+  background-color: rgb(247, 247, 247);
   color: black;
 }
 hr {
