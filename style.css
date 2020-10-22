@@ -536,11 +536,13 @@ input:checked + label:after {
 
 .hero-section {
   height: 120vh;
+  min-height: 700px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .hero-container {
   display: flex;
@@ -798,6 +800,7 @@ p {
 }
 #testimonials {
   height: 100vh;
+  min-height: 700px;
   display: flex;
   justify-content: space-between;
   align-items: center;
