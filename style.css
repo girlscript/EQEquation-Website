@@ -420,7 +420,7 @@ input:checked + label:after {
 .text-container h1 {
   /* font-family: "Libre Baskerville", serif; */
   font-family: "Yoxall";
-  font-size: 50px;
+  font-size: 5vh;
 }
 
 .text-container button {
