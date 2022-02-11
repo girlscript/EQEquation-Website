@@ -593,12 +593,14 @@ input:checked + label:after {
   padding: 1vh 1.5vh;
   font-size: 14px;
   border: none;
-  background-color: gold;
+  background-color: #000;
+  color: #fff;
+  outline: none;
   border-radius: 20px;
 }
 .hero-container button:hover {
-  background-color: white;
-  border-color: gold;
+  background-color: #fff;
+  color: #000;
   transition-duration: 1s;
   animation-direction: alternate;
 }
