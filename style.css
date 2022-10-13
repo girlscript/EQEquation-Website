@@ -441,8 +441,10 @@ input:checked + label:after {
 }
 
 .text-container button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+ background-color: transparent;
+ color: blue;
+ border: 0.1rem solid blue;
+ transition: 0.8s;
 }
 
 .main-hero-img img {
@@ -808,7 +810,9 @@ p {
 #testimonials blockquote::before {
   content: open-quote;
 }
-
+q{
+  font-family: cursive;
+}
 #testimonials blockquote::after {
   content: close-quote;
 }
@@ -842,6 +846,8 @@ p {
 
 .testimonials-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background: #f67c92;
+  transition: 1s;
 }
 
 .img-testimonials-card {
@@ -920,6 +926,7 @@ form input {
   box-shadow: none;
   box-sizing: border-box;
   border: 2px solid #fab3c4;
+  background: transparent;
 }
 .btn-box {
   width: 100%;
@@ -930,6 +937,7 @@ form input {
   flex-basis: 48%;
   padding: 18px 0;
 }
+
 
 /* Footer  */
 
