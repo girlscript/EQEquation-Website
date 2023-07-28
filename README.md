@@ -45,11 +45,11 @@ All contributors are Welcome before contributing to this Project, make sure you 
 
 👉Ritesh Yadav[Project Lead] 
 * Shoot me a message on Slack Channel of GSSOC'20 Extended
-* Mail me at : [Ritesh](daydreamingguy941@gmail.com)
+* Mail me at : [Ritesh](mailto:daydreamingguy941@gmail.com)
 
 👉Shama Devi[Project Lead]
 * Shoot a message on Slack Channel of GSSOC'20 Extended
-* Mail at : [Shama](shamadevi4041@gmail.com)
+* Mail at : [Shama](mailto:shamadevi4041@gmail.com)
 
 ## At the End:
 
